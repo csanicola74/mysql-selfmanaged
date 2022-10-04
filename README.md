@@ -14,4 +14,5 @@
 
 #### so now you can test the connection by logging in as '$ mysql -u dba -p' and enter the password: ahi2022 and now you can connect in
 #### create database tempdata;
-select * from mysql.user \G
+#### in the python file, use the '.read_csv' to read the data file 
+#### upload the datafile to the sql using the '.to_sql' command
