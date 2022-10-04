@@ -21,7 +21,6 @@ import pandas as pd
 
 # print(engine.table_names())
 
-salary = pd.read_csv(
-    'data/Data_Science_Fields_Salary_Categorization.csv')
-salary.to_sql('Data_Science_Fields_Salary_Categorization',
-              con=engine, if_exists='append')
+height_weight_data = pd.read_csv(
+    '/Users/carolinesanicola/Documents/GitHub/mysql-selfmanaged/data/height_weight_data.csv', sep='\t', lineterminator='\r')
+height_weight_data.to_sql('height_weight_data', con=engine, if_exists='append')
